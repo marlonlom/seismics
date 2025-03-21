@@ -27,4 +27,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Seismics"
-include(":app:mobile")
+include(":apps:mobile")
