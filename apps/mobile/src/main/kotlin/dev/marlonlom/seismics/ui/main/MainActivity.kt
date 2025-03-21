@@ -31,9 +31,11 @@ class MainActivity : ComponentActivity() {
     enableEdgeToEdge()
     setContent {
       SeismicsTheme {
-        Scaffold(modifier = Modifier
-          .fillMaxSize()
-          .safeContentPadding()) { innerPadding ->
+        Scaffold(
+          modifier = Modifier
+            .fillMaxSize()
+            .safeContentPadding(),
+        ) { innerPadding ->
           Greeting(
             name = "Android",
             modifier = Modifier.padding(innerPadding),
