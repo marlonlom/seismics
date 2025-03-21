@@ -6,10 +6,14 @@ spotless = "7.0.2"
 [libraries]
 #[libraries] implementation
 androidx-activity-compose = "androidx.activity:activity-compose:1.10.1"
-androidx-compose-bom = "androidx.compose:compose-bom:2025.03.00"
 androidx-core-ktx = "androidx.core:core-ktx:1.15.0"
-androidx-material3 = { module = "androidx.compose.material3:material3" }
 androidx-lifecycle-runtime-ktx = "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7"
+maps-compose = "com.google.maps.android:maps-compose:4.3.3"
+play-services-maps = "com.google.android.gms:play-services-maps:19.1.0"
+
+#[libraries] implementation: androidx compose bom
+androidx-compose-bom = "androidx.compose:compose-bom:2025.03.00"
+androidx-material3 = { module = "androidx.compose.material3:material3" }
 androidx-ui = { module = "androidx.compose.ui:ui" }
 androidx-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
 androidx-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
