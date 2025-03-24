@@ -8,7 +8,7 @@ spotless = "7.0.2"
 androidx-activity-compose = "androidx.activity:activity-compose:1.10.1"
 androidx-core-ktx = "androidx.core:core-ktx:1.15.0"
 androidx-lifecycle-runtime-ktx = "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7"
-maps-compose = "com.google.maps.android:maps-compose:6.5.1"
+maps-compose = "com.google.maps.android:maps-compose:6.5.2"
 play-services-maps = "com.google.android.gms:play-services-maps:19.1.0"
 
 #[libraries] implementation: androidx compose bom
