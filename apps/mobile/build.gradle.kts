@@ -60,6 +60,9 @@ dependencies {
   implementation(composeBom)
   androidTestImplementation(composeBom)
 
+  val koinBom = platform(libs.koin.bom)
+  implementation(koinBom)
+
   implementation(libs.androidx.activity.compose)
   implementation(libs.androidx.core.ktx)
   implementation(libs.androidx.lifecycle.runtime.ktx)
@@ -67,6 +70,7 @@ dependencies {
   implementation(libs.androidx.ui)
   implementation(libs.androidx.ui.graphics)
   implementation(libs.androidx.ui.tooling.preview)
+  implementation(libs.bundles.koin)
   implementation(libs.maps.compose)
   implementation(libs.play.services.maps)
 
