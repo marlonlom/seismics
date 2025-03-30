@@ -18,6 +18,11 @@ androidx-ui = { module = "androidx.compose.ui:ui" }
 androidx-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
 androidx-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
 
+#[libraries] implementation: koin
+koin-bom = "io.insert-koin:koin-bom:4.0.2"
+koin-core = { module = "io.insert-koin:koin-core" }
+koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose" }
+
 #[libraries] debug-implementation
 androidx-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
 androidx-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
@@ -35,3 +40,6 @@ android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+
+[bundles]
+koin = ["koin-core", "koin-androidx-compose"]
