@@ -31,6 +31,7 @@ class AndroidLibConventionPlugin : Plugin<Project> {
         defaultConfig.apply {
           @Suppress("DEPRECATION")
           targetSdk = Config.android.targetSdkVersion
+          testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         }
         buildTypes {
           release {
