@@ -9,11 +9,14 @@ import com.android.build.api.dsl.ApplicationExtension
 import dev.marlonlom.seismics.configs.Config
 import dev.marlonlom.seismics.extensions.configureAndroidKotlin
 import dev.marlonlom.seismics.extensions.configureBuildTypes
-import dev.marlonlom.seismics.extensions.configureAndroidKoin
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
 
+/**
+ * Android app convention plugin class.
+ * @author marlonlom
+ */
 class AndroidAppConventionPlugin : Plugin<Project> {
   override fun apply(project: Project) {
     with(project) {
@@ -30,7 +33,6 @@ class AndroidAppConventionPlugin : Plugin<Project> {
         }
         configureAndroidKotlin(this)
         configureBuildTypes(this)
-        configureAndroidKoin(this)
       }
     }
   }

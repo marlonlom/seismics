@@ -11,6 +11,10 @@ import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.getByType
 
+/**
+ * Android compose app convention plugin class.
+ * @author marlonlom
+ */
 class AndroidAppComposeConventionPlugin : Plugin<Project> {
   override fun apply(project: Project) {
     with(project) {

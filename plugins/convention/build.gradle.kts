@@ -31,6 +31,10 @@ gradlePlugin {
       id = "seismics.android.app.compose"
       implementationClass = "dev.marlonlom.seismics.plugins.AndroidAppComposeConventionPlugin"
     }
+    register("androidKoin") {
+      id = "seismics.android.koin"
+      implementationClass = "dev.marlonlom.seismics.plugins.AndroidKoinConventionPlugin"
+    }
     register("androidLibCompose") {
       id = "seismics.android.lib.compose"
       implementationClass = "dev.marlonlom.seismics.plugins.AndroidLibComposeConventionPlugin"
