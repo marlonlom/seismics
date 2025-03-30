@@ -11,10 +11,18 @@ import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.getByType
 
+/**
+ * Android compose library convention plugin class.
+ * @author marlonlom
+ */
 class AndroidLibComposeConventionPlugin : Plugin<Project> {
   override fun apply(project: Project) {
     with(project) {
-      pluginManager.apply("com.android.library")
+      with(pluginManager) {
+        apply("com.android.library")
+        apply("org.jetbrains.kotlin.plugin.compose")
+      }
+
       val extension = extensions.getByType<LibraryExtension>()
       configureAndroidCompose(extension)
     }

@@ -8,12 +8,14 @@ package dev.marlonlom.seismics.plugins
 import com.android.build.api.dsl.LibraryExtension
 import dev.marlonlom.seismics.configs.Config
 import dev.marlonlom.seismics.extensions.configureAndroidKotlin
-import dev.marlonlom.seismics.extensions.configureBuildTypes
-import dev.marlonlom.seismics.extensions.configureAndroidKoin
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
 
+/**
+ * Android library convention plugin class.
+ * @author marlonlom
+ */
 class AndroidLibConventionPlugin : Plugin<Project> {
   override fun apply(project: Project) {
     with(project) {
@@ -23,7 +25,6 @@ class AndroidLibConventionPlugin : Plugin<Project> {
       }
       extensions.configure<LibraryExtension> {
         configureAndroidKotlin(this)
-        configureAndroidKoin(this)
         testOptions.apply {
           targetSdk = Config.android.targetSdkVersion
         }
@@ -31,7 +32,15 @@ class AndroidLibConventionPlugin : Plugin<Project> {
           @Suppress("DEPRECATION")
           targetSdk = Config.android.targetSdkVersion
         }
-        configureBuildTypes(this)
+        buildTypes {
+          release {
+            isMinifyEnabled = false
+            proguardFiles(
+              getDefaultProguardFile("proguard-android-optimize.txt"),
+              "proguard-rules.pro",
+            )
+          }
+        }
       }
     }
   }

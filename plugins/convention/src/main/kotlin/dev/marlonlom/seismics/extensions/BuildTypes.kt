@@ -14,7 +14,7 @@ import org.gradle.api.Project
  *
  * @param extension Common extension instance.
  */
-fun Project.configureBuildTypes(
+internal fun Project.configureBuildTypes(
   extension: CommonExtension<*, *, *, *, *, *>
 ) {
   extension.apply {
