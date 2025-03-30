@@ -2,12 +2,12 @@
  * Copyright 2025 Marlonlom
  * SPDX-License-Identifier: Apache-2.0
  */
-package dev.marlonlom.seismics.ui.theme
+package dev.marlonlom.seismics.ui.mobile.designsystem.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
-import dev.marlonlom.seismics.R
+import dev.marlonlom.seismics.ui.mobile.designsystem.R
 
 /**
  * Branded font specification object.
