@@ -12,6 +12,7 @@ plugins {
 
 dependencies {
   implementation(project(":features:mobile:designsystem"))
+  implementation(project(":features:core:preferences"))
 
   implementation(libs.androidx.lifecycle.runtime.ktx)
   implementation(libs.maps.compose)

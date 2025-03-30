@@ -4,6 +4,7 @@
  */
 package dev.marlonlom.seismics.di
 
+import dev.marlonlom.seismics.core.preferences.di.preferencesKoinModule
 import org.koin.dsl.module
 
 /**
@@ -12,4 +13,5 @@ import org.koin.dsl.module
  * @author marlonlom
  */
 val appKoinModule = module {
+  includes(preferencesKoinModule)
 }
