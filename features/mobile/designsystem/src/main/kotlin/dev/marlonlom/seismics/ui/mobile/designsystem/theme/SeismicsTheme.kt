@@ -2,7 +2,7 @@
  * Copyright 2025 Marlonlom
  * SPDX-License-Identifier: Apache-2.0
  */
-package dev.marlonlom.seismics.ui.theme
+package dev.marlonlom.seismics.ui.mobile.designsystem.theme
 
 import android.app.Activity
 import android.os.Build

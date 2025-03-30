@@ -29,3 +29,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Seismics"
 include(":apps:mobile")
+include(":features:mobile:designsystem")
