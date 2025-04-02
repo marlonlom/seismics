@@ -8,6 +8,12 @@ plugins {
   id("seismics.android.app.compose")
   id("seismics.android.koin")
   id("seismics.spotless")
+  id(libs.plugins.google.secrets.get().pluginId)
+}
+
+secrets {
+  propertiesFileName = "secrets.properties"
+  defaultPropertiesFileName = "secrets.defaults.properties"
 }
 
 dependencies {
