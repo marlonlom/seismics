@@ -31,6 +31,10 @@ class AndroidAppConventionPlugin : Plugin<Project> {
           versionCode = Config.android.versionCode
           versionName = Config.android.versionName
           testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+          buildFeatures {
+            buildConfig = true
+          }
         }
         configureAndroidKotlin(this)
         configureBuildTypes(this)
