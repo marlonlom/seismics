@@ -8,7 +8,11 @@ plugins {
   id("seismics.android.app.compose")
   id("seismics.android.koin")
   id("seismics.spotless")
-  id(libs.plugins.google.secrets.get().pluginId)
+  id(
+    libs.plugins.google.secrets
+      .get()
+      .pluginId,
+  )
 }
 
 secrets {
