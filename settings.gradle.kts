@@ -30,4 +30,4 @@ dependencyResolutionManagement {
 rootProject.name = "Seismics"
 include(":apps:mobile")
 include(":features:mobile:designsystem")
-include(":features:core:preferences")
+include(":features:core:network", ":features:core:preferences")
