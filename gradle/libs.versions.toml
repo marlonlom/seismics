@@ -5,7 +5,7 @@
 
 [versions]
 agp = "8.9.1"
-googleSecretPlugin = "2.0.1"
+mapsplatform-secrets = "2.0.1"
 kotlin = "2.1.20"
 spotless = "7.0.2"
 
@@ -15,6 +15,7 @@ androidx-activity-compose = "androidx.activity:activity-compose:1.10.1"
 androidx-core-ktx = "androidx.core:core-ktx:1.15.0"
 androidx-datastore-preferences = "androidx.datastore:datastore-preferences:1.1.4"
 androidx-lifecycle-runtime-ktx = "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7"
+kotlinx-serialization-json = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.0"
 maps-compose = "com.google.maps.android:maps-compose:6.5.2"
 play-services-maps = "com.google.android.gms:play-services-maps:19.1.0"
 
@@ -30,6 +31,13 @@ koin-bom = "io.insert-koin:koin-bom:4.0.3"
 koin-core = { module = "io.insert-koin:koin-core" }
 koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose" }
 
+#[libraries] implementation: ktor-client-android
+ktor-client-android = "io.ktor:ktor-client-android:2.3.4"
+ktor-client-content-negotiation = "io.ktor:ktor-client-content-negotiation:2.3.4"
+ktor-client-core = "io.ktor:ktor-client-core:2.3.4"
+ktor-client-serialization = "io.ktor:ktor-client-serialization:2.3.4"
+ktor-serialization-kotlinx-json = "io.ktor:ktor-serialization-kotlinx-json:2.3.4"
+
 #[libraries] debug-implementation
 androidx-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
 androidx-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
@@ -37,6 +45,7 @@ androidx-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
 #[libraries] test-implementation
 junit = "junit:junit:4.13.2"
 kotlinx-coroutines-test = "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.10.1"
+ktor-client-mock = "io.ktor:ktor-client-mock:2.3.4"
 
 #[libraries] android-test-implementation
 androidx-espresso-core = "androidx.test.espresso:espresso-core:3.6.1"
@@ -53,10 +62,12 @@ spotless-gradlePlugin = "com.diffplug.spotless:spotless-plugin-gradle:7.0.2"
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
-google-secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "googleSecretPlugin" }
+google-secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "mapsplatform-secrets" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
 
 [bundles]
 koin = ["koin-core", "koin-androidx-compose"]
+ktor-android-client = ["ktor-client-android", "ktor-client-content-negotiation", "ktor-client-core", "ktor-client-serialization", "ktor-serialization-kotlinx-json"]
