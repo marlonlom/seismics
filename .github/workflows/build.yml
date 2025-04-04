@@ -19,6 +19,6 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: prepare secrets
-        run: echo "MAPS_API_KEY=DEFAULT_API_KEY\nUSGS_BASE_URL=DEFAULT_USGS_BASE_URL" > ./local.properties
+        run: echo "MAPS_API_KEY=DEFAULT_API_KEY\nUSGS_BASE_URL=DEFAULT_USGS_BASE_URL" > ./secrets.properties
       - name: Build with Gradle
         run: ./gradlew build
