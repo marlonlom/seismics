@@ -18,7 +18,7 @@ jobs:
           cache: gradle
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
-      - name: Generate apikey.properties
+      - name: Generate secrets.properties
         run: |
           cat <<EOF > secrets.properties
           MAPS_API_KEY:"MAPS_API_KEY"
