@@ -21,4 +21,10 @@
 #-renamesourcefileattribute SourceFile
 
 # Generated "keep" rules for R8 []
--keep class org.slf4j.impl.StaticLoggerBinder { *; }
+
+-keep class org.slf4j.impl.StaticLoggerBinder {
+    *;
+}
+-keep class org.slf4j.** {
+    *;
+}
