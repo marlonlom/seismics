@@ -56,7 +56,7 @@ object LatLngConverter {
    * @return latitude signature, or empty if zero
    */
   private fun getLatitudeSignature(coordinate: Float): String = when {
-    isFloatBetween(-90f, coordinate, 0f)-> ORIENTATIONS[1]
+    isFloatBetween(-90f, coordinate, 0f) -> ORIENTATIONS[1]
     isFloatBetween(0f, coordinate, 90f) -> ORIENTATIONS[0]
     else -> ""
   }
