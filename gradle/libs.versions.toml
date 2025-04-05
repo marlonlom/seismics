@@ -35,8 +35,10 @@ koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose" }
 ktor-client-android = "io.ktor:ktor-client-android:2.3.4"
 ktor-client-content-negotiation = "io.ktor:ktor-client-content-negotiation:2.3.4"
 ktor-client-core = "io.ktor:ktor-client-core:2.3.4"
+ktor-client-logging-jvm = "io.ktor:ktor-client-logging-jvm:2.3.4"
 ktor-client-serialization = "io.ktor:ktor-client-serialization:2.3.4"
 ktor-serialization-kotlinx-json = "io.ktor:ktor-serialization-kotlinx-json:2.3.4"
+
 
 #[libraries] debug-implementation
 androidx-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
@@ -70,4 +72,4 @@ spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
 
 [bundles]
 koin = ["koin-core", "koin-androidx-compose"]
-ktor-android-client = ["ktor-client-android", "ktor-client-content-negotiation", "ktor-client-core", "ktor-client-serialization", "ktor-serialization-kotlinx-json"]
+ktor-android-client = ["ktor-client-android", "ktor-client-content-negotiation", "ktor-client-core", "ktor-client-serialization", "ktor-client-logging-jvm", "ktor-serialization-kotlinx-json"]
