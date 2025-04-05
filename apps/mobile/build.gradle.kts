@@ -21,9 +21,9 @@ secrets {
 }
 
 dependencies {
-  implementation(project(":features:mobile:designsystem"))
   implementation(project(":features:core:network"))
   implementation(project(":features:core:preferences"))
+  implementation(project(":features:mobile:designsystem"))
 
   implementation(libs.androidx.lifecycle.runtime.ktx)
   implementation(libs.maps.compose)
