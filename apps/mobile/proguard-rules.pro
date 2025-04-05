@@ -19,3 +19,6 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# Generated "keep" rules for R8 []
+-keep class org.slf4j.impl.StaticLoggerBinder { *; }
