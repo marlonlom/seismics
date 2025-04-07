@@ -47,7 +47,7 @@ androidx-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
 #[libraries] test-implementation
 junit = "junit:junit:4.13.2"
 kotlinx-coroutines-test = "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.10.1"
-ktor-client-mock = "io.ktor:ktor-client-mock:2.3.4"
+ktor-client-mock = "io.ktor:ktor-client-mock:3.1.2"
 
 #[libraries] android-test-implementation
 androidx-espresso-core = "androidx.test.espresso:espresso-core:3.6.1"
