@@ -50,11 +50,11 @@ internal val ktorHttpClient = HttpClient(Android) {
         encodeDefaults = false
       },
     )
+  }
 
-    engine {
-      connectTimeout = TIME_OUT
-      socketTimeout = TIME_OUT
-    }
+  engine {
+    connectTimeout = TIME_OUT
+    socketTimeout = TIME_OUT
   }
 
   install(Logging) {
