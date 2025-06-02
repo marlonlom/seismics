@@ -7,7 +7,7 @@
 agp = "8.10.1"
 mapsplatform-secrets = "2.0.1"
 kotlin = "2.1.21"
-spotless = "7.0.3"
+spotless = "7.0.4"
 
 [libraries]
 #[libraries] implementation
