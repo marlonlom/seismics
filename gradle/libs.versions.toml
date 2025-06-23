@@ -20,7 +20,7 @@ maps-compose = "com.google.maps.android:maps-compose:6.6.0"
 play-services-maps = "com.google.android.gms:play-services-maps:19.2.0"
 
 #[libraries] implementation: androidx compose bom
-androidx-compose-bom = "androidx.compose:compose-bom:2025.06.00"
+androidx-compose-bom = "androidx.compose:compose-bom:2025.06.01"
 androidx-material3 = { module = "androidx.compose.material3:material3" }
 androidx-ui = { module = "androidx.compose.ui:ui" }
 androidx-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
@@ -35,7 +35,6 @@ koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose" }
 ktor-client-android = "io.ktor:ktor-client-android:3.2.0"
 ktor-client-content-negotiation = "io.ktor:ktor-client-content-negotiation:3.2.0"
 ktor-client-core = "io.ktor:ktor-client-core:3.2.0"
-ktor-client-logging-jvm = "io.ktor:ktor-client-logging-jvm:3.2.0"
 ktor-client-serialization = "io.ktor:ktor-client-serialization:3.2.0"
 ktor-serialization-kotlinx-json = "io.ktor:ktor-serialization-kotlinx-json:3.2.0"
 
@@ -72,4 +71,4 @@ spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
 
 [bundles]
 koin = ["koin-core", "koin-androidx-compose"]
-ktor-android-client = ["ktor-client-android", "ktor-client-content-negotiation", "ktor-client-core", "ktor-client-serialization", "ktor-client-logging-jvm", "ktor-serialization-kotlinx-json"]
+ktor-android-client = ["ktor-client-android", "ktor-client-content-negotiation", "ktor-client-core", "ktor-client-serialization", "ktor-serialization-kotlinx-json"]
