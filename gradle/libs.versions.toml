@@ -49,7 +49,7 @@ kotlinx-coroutines-test = "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.10.2"
 ktor-client-mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktor" }
 
 #[libraries] android-test-implementation
-androidx-espresso-core = "androidx.test.espresso:espresso-core:3.6.1"
+androidx-espresso-core = "androidx.test.espresso:espresso-core:3.7.0"
 androidx-junit = "androidx.test.ext:junit:1.2.1"
 androidx-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
 google-truth = "com.google.truth:truth:1.4.4"
