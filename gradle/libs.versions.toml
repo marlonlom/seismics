@@ -52,7 +52,7 @@ ktor-client-mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktor" }
 androidx-espresso-core = "androidx.test.espresso:espresso-core:3.7.0"
 androidx-junit = "androidx.test.ext:junit:1.3.0"
 androidx-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
-google-truth = "com.google.truth:truth:1.4.4"
+google-truth = "com.google.truth:truth:1.4.5"
 
 #[libraries] gradle convention plugin
 android-gradlePlugin = "com.android.tools.build:gradle:8.13.0"
