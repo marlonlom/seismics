@@ -17,7 +17,7 @@ androidx-core-ktx = "androidx.core:core-ktx:1.17.0"
 androidx-datastore-preferences = "androidx.datastore:datastore-preferences:1.2.0-alpha02"
 androidx-lifecycle-runtime-ktx = "androidx.lifecycle:lifecycle-runtime-ktx:2.9.4"
 kotlinx-serialization-json = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.9.0"
-maps-compose = "com.google.maps.android:maps-compose:6.10.0"
+maps-compose = "com.google.maps.android:maps-compose:6.11.0"
 play-services-maps = "com.google.android.gms:play-services-maps:19.2.0"
 
 #[libraries] implementation: androidx compose bom
