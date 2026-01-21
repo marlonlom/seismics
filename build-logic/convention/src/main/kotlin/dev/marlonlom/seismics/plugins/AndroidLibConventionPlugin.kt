@@ -21,7 +21,6 @@ class AndroidLibConventionPlugin : Plugin<Project> {
     with(project) {
       with(pluginManager) {
         apply("com.android.library")
-        apply("kotlin-android")
       }
       extensions.configure<LibraryExtension> {
         configureAndroidKotlin(this)
@@ -29,8 +28,6 @@ class AndroidLibConventionPlugin : Plugin<Project> {
           targetSdk = Config.android.targetSdkVersion
         }
         defaultConfig.apply {
-          @Suppress("DEPRECATION")
-          targetSdk = Config.android.targetSdkVersion
           testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         }
         buildTypes {

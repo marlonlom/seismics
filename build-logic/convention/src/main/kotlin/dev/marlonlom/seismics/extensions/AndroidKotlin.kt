@@ -19,7 +19,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinJvmCompile
  * @param extension Common extension instance.
  */
 internal fun Project.configureAndroidKotlin(
-  extension: CommonExtension<*, *, *, *, *, *>,
+  extension: CommonExtension,
 ) {
   with(extension) {
     namespace = Config.android.nameSpace
@@ -31,10 +31,8 @@ internal fun Project.configureAndroidKotlin(
       vectorDrawables.useSupportLibrary = true
     }
 
-    compileOptions {
-      sourceCompatibility = Config.jvm.javaVersion
-      targetCompatibility = Config.jvm.javaVersion
-    }
+      compileOptions.sourceCompatibility = Config.jvm.javaVersion
+      compileOptions.targetCompatibility = Config.jvm.javaVersion
 
     packaging.resources.excludes += "/META-INF/{AL2.0,LGPL2.1}"
 
