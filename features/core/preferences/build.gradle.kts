@@ -12,9 +12,6 @@ plugins {
 
 android {
   namespace = "dev.marlonlom.seismics.core.preferences"
-  defaultConfig {
-    consumerProguardFiles("consumer-rules.pro")
-  }
 }
 
 dependencies {
