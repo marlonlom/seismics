@@ -11,7 +11,4 @@ plugins {
 
 android {
   namespace = "dev.marlonlom.seismics.ui.mobile.designsystem"
-  defaultConfig {
-    consumerProguardFiles("consumer-rules.pro")
-  }
 }
