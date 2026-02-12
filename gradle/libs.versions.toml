@@ -6,7 +6,7 @@
 [versions]
 agp = "9.0.0"
 mapsplatform-secrets = "2.0.1"
-kotlin = "2.3.0"
+kotlin = "2.3.10"
 ktor = "3.4.0"
 spotless = "8.2.1"
 
